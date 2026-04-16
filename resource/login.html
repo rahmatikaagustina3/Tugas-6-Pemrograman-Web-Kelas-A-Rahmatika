@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Login Aplikasi</title> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+</head> 
+
+<body class="bg-light"> 
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow" style="width: 350px;">
+            <div class="card-body">
+                <h3 class="text-center mb-4">Login Aplikasi</h3> 
+                <form method="post" action="ceklogin.php">  
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Username" id="username"> 
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Password" id="password"> 
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary w-50">
+                        Login
+                    </button>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body> 
+</html>
