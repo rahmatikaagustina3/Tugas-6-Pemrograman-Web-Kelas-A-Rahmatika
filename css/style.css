@@ -192,23 +192,31 @@ background: #fb8307;
 /* Membuat tampilan form menumpuk pada layar kecil */ 
 @media (max-width: 700px) { 
 .form-group label, .form-group .input{ 
-width: 100%; 
+    width: 100%;
 } 
-}
-
-body {
-    background-color: #6ba3f7;
 }
 
 .alert {
     border-radius: 10px;
-}
-
-.alert {
-    transition: 0.3s;
+     transition: 0.3s;
 }
 
 .alert:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.main {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
